@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language">Language</string>
+    <string name="color_theme">Color Theme</string>
+    <string name="log_out">Log Out</string>
+</resources>

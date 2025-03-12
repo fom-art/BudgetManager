@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uah">Ukrainian Hryvnia</string>
+    <string name="czk">Czech Koruna</string>
+    <string name="eur">Euro</string>
+    <string name="usd">Dollars</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+</resources>

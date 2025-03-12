@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">Welcome %s</string>
+    <string name="goals">Goals</string>
+    <string name="create_goal">Create goal</string>
+    <string name="no_data_message">No data available to display. Please add transactions or goals to get started!</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_transaction">Add transaction</string>
+    <string name="today_at_time">Today at %1$s</string>
+    <string name="yesterday_at_time">Yesterday at %1$s</string>
+    <string name="date">Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_category">Select Category</string>
+    <string name="split">Split</string>
+    <string name="split_evenly">Split evenly</string>
+    <string name="edit_split">Edit split</string>
+    <string name="categories">Categories</string>
+    <string name="add_category">Add Category</string>
+    <string name="repeatable_transaction">Repeatable Transaction</string>
+    <string name="select">Select</string>
+    <string name="me">Me</string>
+    <string name="every">Every</string>
+
+    <!-- Split Dialog -->
+    <string name="split_set_up">Split set up</string>
+</resources>

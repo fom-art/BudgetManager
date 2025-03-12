@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nick_name_example">\@nickname</string>
+    <string name="total_debt">Total Debt</string>
+    <string name="close_total_debt">Close Total Debt</string>
+</resources>

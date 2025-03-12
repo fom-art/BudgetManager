@@ -1,0 +1,47 @@
+<resources>
+    <!-- Application Name -->
+    <string name="app_name">Budget Manager</string>
+
+    <!-- Functional Elements -->
+    <string name="search">Search</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="filter">Filter</string>
+    <string name="history">History</string>
+    <string name="exit">Exit</string>
+    <string name="go_back">Go Back</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="sign_in_failed">Sign In Failed!</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="time">Time</string>
+    <string name="done">Done</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="submit">Submit</string>
+    <string name="add">Add</string>
+    <string name="clear_search">Clear Search</string>
+    <string name="settings">Settings</string>
+
+    <!-- Application-Specific Strings -->
+    <string name="analytics">Analytics</string>
+    <string name="loans">Loans</string>
+    <string name="transactions">Transactions</string>
+    <string name="goals">Goals</string>
+    <string name="friends">Friends</string>
+    <string name="about">About</string>
+    <string name="notifications">Notifications</string>
+    <string name="friend_remove_prompt">Friend added. Do you want to remove?</string>
+
+<!--==================================================================================-->
+<!-- Layouts -->
+
+    <string name="income_icon_description">The transaction is set as income. Click it to set it as outcome</string>
+    <string name="outcome_icon_description">The transaction is set as outcome. Click it to set it as income</string>
+
+    <string name="select_time">Select Time</string>
+
+
+</resources>

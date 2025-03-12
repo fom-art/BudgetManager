@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="spend">Spend</string>
+    <string name="save_up">Save up</string>
+    <string name="due_date">Due to</string>
+</resources>

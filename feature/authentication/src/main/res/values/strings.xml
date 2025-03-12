@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign up</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="go_back_to_sign_in">Go back to sign in</string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="email_was_sent_title">Email was sent</string>
+    <string name="email_was_sent_description">We\'ve sent a password reset link to %1$s.\nPlease check your inbox and spam folder.</string>
+    <string name="registration_completed_title">Registration completed</string>
+    <string name="registration_completed_description">You have successfully completed registration. Sign in to proceed.</string>
+</resources>

@@ -1,0 +1,588 @@
+@startuml
+class com.wf.bm.feature.friends.BuildConfig {
++ {static} boolean DEBUG
++ {static} String LIBRARY_PACKAGE_NAME
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.core.designsystem.components.BmNavigationSuiteScope {
++ void item(void,Modifier,void,Boolean,void,() -> Unit,void,@Composable () -> Unit,void,@Composable () -> Unit,void,@Composable (() -> Unit)?,void)
++ void null()
+}
+
+class com.wf.bm.core.designsystem.components.BmNavigationDefaults {
++ void navigationContentColor()
++ void navigationSelectedItemColor()
++ void navigationIndicatorColor()
+}
+
+class com.wf.bm.feature.transactions.common.preview.SplitActions {
+}
+class com.wf.bm.feature.goals.main.navigation.GoalsScreen {
+}
+class com.wf.bm.MainActivity {
+- AuthenticationManager authenticationManager
++ void onCreate(Bundle?)
+}
+
+
+class com.wf.bm.icons.BmIcons {
++  People
++  PeopleBorder
++  Money
++  MoneyBorder
++  Summary
++  SummaryBorder
++  Analytics
++  AnalyticsBorder
++  Settings
++  SettingsBorder
+}
+
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+class com.wf.bm.ui.TopLevelDestination$null {
+}
+enum com.wf.bm.ui.TopLevelDestination {
+}
+class com.wf.bm.feature.settlements.history.navigation.SettlementsHistoryScreen {
+}
+interface com.wf.bm.core.data.repository.UserRepository {
++ User? authenticateUser(String,String)
++ List<User> findUsersByNickname(String)
++ List<User> findUsersByFullName(String)
++ User? findUserByEmail(String)
++ User? findUserByUsername(String)
++ void uploadAvatarForUser(User,File)
++ void sendPasswordResetEmailToUser(User)
++ Flow<UiEvent> registerUser(User,String)
++ void addFriendToUser(User,User)
++ void removeFriendFromUser(User,User)
++ void closeSettlementsBetweenUsers(User,User)
+}
+
+class com.wf.bm.feature.transactions.create.CreateTransactionViewModel {
+}
+class com.wf.bm.feature.transactions.create.CreateTransactionState {
+}
+class com.wf.bm.feature.authentication.BuildConfig {
++ {static} boolean DEBUG
++ {static} String LIBRARY_PACKAGE_NAME
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.feature.friends.details.navigation.FriendDetailsScreen {
+}
+class com.wf.bm.core.utils.BuildConfig {
++ {static} boolean DEBUG
++ {static} String LIBRARY_PACKAGE_NAME
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.core.model.Wallet {
+}
+class com.wf.bm.feature.homepage.analytics.piechart.PieChartData {
+}
+class com.wf.bm.feature.settlements.main.SettlementsViewModel {
+}
+class com.wf.bm.feature.settlements.main.SettlementsState {
++ Int notificationsCount
++ List<Settlement> settlements
++ void null()
+}
+
+
+class com.wf.bm.feature.authentication.registration_complete.navigation.RegistrationCompleteScreen {
+}
+class com.wf.bm.core.designsystem.BuildConfig {
++ {static} boolean DEBUG
++ {static} String LIBRARY_PACKAGE_NAME
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.feature.transactions.BuildConfig {
++ {static} boolean DEBUG
++ {static} String LIBRARY_PACKAGE_NAME
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.feature.transactions.edit.EditTransactionViewModel {
+}
+class com.wf.bm.feature.transactions.edit.EditTransactionState {
+}
+class com.wf.bm.feature.transactions.main.TransactionsViewModel {
+}
+class com.wf.bm.feature.transactions.main.TransactionsState {
++ List<Transaction> transactions
+}
+
+class com.wf.bm.feature.settlements.main.navigation.SettlementsScreen {
+}
+class com.wf.bm.navigation.graphs.AuthenticationGraph {
+}
+class com.wf.bm.feature.transactions.common.preview.SplitState {
+}
+class com.wf.bm.navigation.graphs.FriendsGraph {
+}
+class com.wf.bm.core.data.repository.BackendUserRepository {
++ User? authenticateUser(String,String)
++ List<User> findUsersByNickname(String)
++ List<User> findUsersByFullName(String)
++ User? findUserByEmail(String)
++ User? findUserByUsername(String)
++ void uploadAvatarForUser(User,File)
++ void sendPasswordResetEmailToUser(User)
++ Flow<UiEvent> registerUser(User,String)
++ void addFriendToUser(User,User)
++ void removeFriendFromUser(User,User)
++ void closeSettlementsBetweenUsers(User,User)
+}
+
+class com.wf.bm.feature.authentication.forgot_password.navigation.ForgotPasswordScreen {
+}
+class com.wf.bm.navigation.graphs.TransactionsGraph {
+}
+class com.wf.bm.feature.homepage.BuildConfig {
++ {static} boolean DEBUG
++ {static} String LIBRARY_PACKAGE_NAME
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.core.model.User {
+}
+class com.example.compose.ColorFamily {
+}
+interface com.wf.bm.core.data.util.AuthenticationManager {
++ Flow<Boolean> isLoggedIn
++ User? user
++ Flow<UiEvent> signIn(String,String)
++ void logOut()
++ void observeCurrentUser((User?) -> Unit)
+}
+
+
+class com.wf.bm.core.data.util.AuthenticationManagerImpl {
+-  _user
+- StateFlow<User?> userStateFlow
++ Flow<Boolean> isLoggedIn
++ User? user
++ Flow<UiEvent> signIn(String,String)
++ void logOut()
++ void observeCurrentUser((User?) -> Unit)
+}
+
+
+class com.wf.bm.feature.goals.create.navigation.CreateGoalScreen {
+}
+class com.wf.bm.feature.transactions.details.TransactionDetailsViewModel {
+}
+class com.wf.bm.feature.transactions.details.TransactionDetailsState {
+}
+class com.wf.bm.ExampleUnitTest {
++ void addition_isCorrect()
+}
+
+class com.wf.bm.feature.friends.details.FriendDetailsViewModel {
+}
+class com.wf.bm.feature.friends.details.FriendDetailsState {
+}
+class com.wf.bm.feature.settings.SettingsViewModel {
+}
+class com.wf.bm.feature.settings.SettingsState {
+}
+class com.wf.bm.feature.transactions.main.navigation.TransactionsScreen {
+}
+class com.wf.bm.core.data.util.UiEvent$Success {
+}
+class com.wf.bm.core.data.util.UiEvent$Error {
+}
+class com.wf.bm.core.data.util.UiEvent$Loading {
+}
+class com.wf.bm.core.data.util.UiEvent {
+}
+class com.wf.bm.feature.transactions.test.BuildConfig {
++ {static} boolean DEBUG
++ {static} String APPLICATION_ID
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.core.data.repository.SettingsRepositoryImpl {
++ Flow<Currency> getPreferredCurrency()
++ Flow<String> getLanguage()
++ Flow<Boolean> getIsDarkTheme()
++ void setPreferredCurrency(Currency)
++ void setLanguage(String)
++ void setIsDarkTheme(Boolean)
+}
+
+class com.wf.bm.feature.authentication.sign_in.SignInViewModel {
+}
+class com.wf.bm.feature.authentication.sign_in.SignInState {
+}
+class com.wf.bm.feature.settlements.BuildConfig {
++ {static} boolean DEBUG
++ {static} String LIBRARY_PACKAGE_NAME
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.feature.goals.BuildConfig {
++ {static} boolean DEBUG
++ {static} String LIBRARY_PACKAGE_NAME
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.feature.authentication.sign_in.navigation.SignInScreen {
+}
+class com.wf.bm.core.model.RepetitionPeriods$Companion {
++ RepetitionPeriods? findRepetitionPeriodFromRes(Int)
+}
+
+enum com.wf.bm.core.model.RepetitionPeriods {
+}
+class com.wf.bm.core.model.RecurringPayment {
+}
+enum com.wf.bm.core.model.RecurringPaymentStatus {
+}
+class com.wf.bm.core.model.Settlement {
+}
+enum com.wf.bm.core.model.SettlementStatus {
+}
+class com.wf.bm.feature.authentication.registration.RegistrationViewModel {
+}
+class com.wf.bm.feature.authentication.registration.RegistrationState {
+}
+class com.wf.bm.core.model.TransactionSimple {
+}
+class com.wf.bm.feature.homepage.navigation.HomepageScreen {
+}
+class com.wf.bm.feature.authentication.test.BuildConfig {
++ {static} boolean DEBUG
++ {static} String APPLICATION_ID
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.feature.friends.main.navigation.FriendsScreen {
+}
+class com.wf.bm.core.utils.CustomNavType {
++ String name
++ T? get(Bundle,String)
++ void null()
++ void null()
++ void put(Bundle,String,T)
++ T parseValue(String)
++ String serializeAsValue(T)
+}
+
+
+class com.wf.bm.core.data.repository.GoalsRepositoryImpl {
++ void createGoalForUser(User,Goal)
++ void updateGoalForUser(User,Goal)
++ void deleteGoalForUser(User,Goal)
+}
+
+interface com.wf.bm.core.data.repository.WalletRepository {
++ List<Wallet> getWallets()
+}
+
+class com.wf.bm.core.model.TextInputModel {
+}
+class com.wf.bm.feature.settlements.create.friend_selection.FriendSelectionDialogViewModel {
+}
+class com.wf.bm.feature.settlements.create.friend_selection.FriendSelectionDialogState {
+}
+class com.wf.bm.feature.settlements.create.friend_selection.FriendSelectionDialogActions {
+}
+class com.wf.bm.core.model.SettlementNotification {
+}
+class com.wf.bm.feature.authentication.registration.navigation.RegistrationScreen {
+}
+class com.wf.bm.feature.transactions.edit.navigation.EditTransactionScreen {
+}
+class com.wf.bm.feature.settlements.notifications.SettlementsNotificationsViewModel {
+}
+class com.wf.bm.feature.settlements.notifications.SettlementsNotificationsState {
++ List<Settlement> settlements
+}
+
+class com.wf.bm.ExampleInstrumentedTest {
++ void useAppContext()
+}
+
+class com.wf.bm.core.data.repository.SettlementsRepositoryImpl {
++ void createSettlementForUser(Settlement,User)
++ void deleteSettlementForUser(Settlement,User)
++ void updateSettlementForUser(Settlement,User)
+}
+
+class com.wf.bm.core.data.repository.WalletRepositoryImpl {
++ List<Wallet> getWallets()
+}
+
+class com.wf.bm.feature.authentication.email_sent.navigation.EmailSentScreen {
+}
+class com.wf.bm.core.model.Currency$Companion {
++ Currency? findCurrencyNameRes(Int)
+}
+
+enum com.wf.bm.core.model.Currency {
++ void exchangeCurrency(void,Double,void,Currency,void,Map<Currency, Map<Currency, Double>>)
++ void null()
+}
+
+interface com.wf.bm.core.data.repository.TransactionsRepository {
++ void createTransactionForUser(User,Transaction)
++ void updateTransactionForUser(User,Transaction)
++ void deleteTransactionForUser(User,Transaction)
++ void observeTransaction(Transaction,(Transaction) -> Unit)
+}
+
+class com.wf.bm.feature.authentication.forgot_password.ForgotPasswordViewModel {
+}
+class com.wf.bm.feature.authentication.forgot_password.ForgotPasswordState {
+}
+class com.wf.bm.feature.settings.BuildConfig {
++ {static} boolean DEBUG
++ {static} String LIBRARY_PACKAGE_NAME
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.navigation.graphs.HomepageGraph {
+}
+class com.wf.bm.feature.goals.create.CreateGoalViewModel {
+}
+class com.wf.bm.feature.goals.create.CreateGoalState {
+}
+class com.wf.bm.core.designsystem.test.BuildConfig {
++ {static} boolean DEBUG
++ {static} String APPLICATION_ID
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.navigation.graphs.SettingsGraph {
+}
+interface com.wf.bm.core.data.repository.GoalsRepository {
++ void createGoalForUser(User,Goal)
++ void updateGoalForUser(User,Goal)
++ void deleteGoalForUser(User,Goal)
+}
+
+class com.wf.bm.test.BuildConfig {
++ {static} boolean DEBUG
++ {static} String APPLICATION_ID
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.feature.settlements.details.SettlementDetailsViewModel {
+-  _settlementDetailsState
++ StateFlow<SettlementDetailsState> state
++ void setSettlement(Settlement)
++ void deleteSettlement()
+}
+
+
+class com.wf.bm.feature.settlements.details.SettlementDetailsState {
+}
+class com.wf.bm.feature.settlements.notifications.navigation.SettlementsNotificationsScreen {
+}
+class com.wf.bm.feature.settlements.details.navigation.SettlementDetailsScreen {
+}
+interface com.wf.bm.core.data.repository.SettlementsRepository {
++ void createSettlementForUser(Settlement,User)
++ void deleteSettlementForUser(Settlement,User)
++ void updateSettlementForUser(Settlement,User)
+}
+
+class com.wf.bm.core.data.repository.TransactionsRepositoryImpl {
++ void createTransactionForUser(User,Transaction)
++ void updateTransactionForUser(User,Transaction)
++ void deleteTransactionForUser(User,Transaction)
++ void observeTransaction(Transaction,(Transaction) -> Unit)
+}
+
+class com.wf.bm.ui.BmAppState {
++ User? user
++  isLoggedIn
++ List<TopLevelDestination> topLevelDestinations
++ NavDestination? currentDestination
++ TopLevelDestination? currentTopLevelDestination
++  showNavigationBar
++ void null()
+- void logOut()
+- void logIn()
++ void navigateToTopLevelDestination(TopLevelDestination)
++ void observeUserChanges()
+- void handleUserStateChange(Boolean)
+}
+
+
+class com.wf.bm.feature.transactions.create.split.friends_selection.FriendsSelectionDialogViewModel {
+}
+class com.wf.bm.feature.transactions.create.split.friends_selection.FriendsSelectionDialogState {
+}
+class com.wf.bm.feature.transactions.create.split.friends_selection.FriendsSelectionDialogActions {
+}
+class com.wf.bm.navigation.graphs.GoalsGraph {
+}
+class com.wf.bm.feature.transactions.details.navigation.TransactionDetailsScreen {
+}
+class com.wf.bm.feature.settings.navigation.SettingsScreen {
+}
+class com.wf.bm.feature.settlements.create.navigation.CreateSettlementScreen {
+}
+class com.wf.bm.feature.homepage.HomepageViewModel {
+}
+class com.wf.bm.feature.homepage.HomepageState {
++ List<Goal> goals
++ List<Transaction> expenses
++ void null()
+}
+
+
+class com.wf.bm.feature.friends.main.FriendsViewModel {
+}
+class com.wf.bm.feature.friends.main.FriendsState {
+}
+class com.wf.bm.BuildConfig {
++ {static} boolean DEBUG
++ {static} String APPLICATION_ID
++ {static} String BUILD_TYPE
++ {static} int VERSION_CODE
++ {static} String VERSION_NAME
+}
+
+class com.wf.bm.feature.settlements.history.SettlementsHistoryViewModel {
+}
+class com.wf.bm.feature.settlements.history.SettlementsState {
++ Int notificationsCount
++ List<Settlement> settlements
+}
+
+class com.wf.bm.BmApplication {
++ void onCreate()
+}
+
+class com.wf.bm.feature.friends.test.BuildConfig {
++ {static} boolean DEBUG
++ {static} String APPLICATION_ID
++ {static} String BUILD_TYPE
+}
+
+class com.wf.bm.feature.goals.main.GoalsViewModel {
+}
+class com.wf.bm.feature.goals.main.GoalsState {
++ List<Goal> goals
+}
+
+class com.wf.bm.feature.settlements.main.filter.FilterDialogViewModel {
+-  _state
++ StateFlow<FilterDialogState> state
++ void setSearchQuery(String)
++ void addFriend(User)
++ void removeFriend(User)
++ void setDebtChecked(Boolean)
++ void setLoanChecked(Boolean)
++ void setDialogVisibility(Boolean)
++ void submit()
++ void onDismissRequest()
+- void filterSuggestedFriends()
++ void initialize(List<User>)
+}
+
+
+class com.wf.bm.feature.settlements.main.filter.FilterDialogState {
+}
+class com.wf.bm.feature.settlements.main.filter.FilterDialogActions {
+}
+class com.wf.bm.core.model.Goal {
+}
+enum com.wf.bm.core.model.GoalType {
+}
+class com.wf.bm.core.model.Transaction {
+}
+class com.wf.bm.core.model.RepeatableTransaction {
+}
+interface com.wf.bm.core.data.repository.SettingsRepository {
++ Flow<Currency> getPreferredCurrency()
++ Flow<String> getLanguage()
++ Flow<Boolean> getIsDarkTheme()
++ void setPreferredCurrency(Currency)
++ void setLanguage(String)
++ void setIsDarkTheme(Boolean)
+}
+
+class com.wf.bm.core.model.Category {
+}
+class com.wf.bm.core.data.repository.UserRepositoryImpl {
++ User? authenticateUser(String,String)
++ List<User> findUsersByNickname(String)
++ List<User> findUsersByFullName(String)
++ User? findUserByEmail(String)
++ User? findUserByUsername(String)
++ void uploadAvatarForUser(User,File)
++ void sendPasswordResetEmailToUser(User)
++ Flow<UiEvent> registerUser(User,String)
++ void addFriendToUser(User,User)
++ void removeFriendFromUser(User,User)
++ void closeSettlementsBetweenUsers(User,User)
+}
+
+class com.wf.bm.feature.settlements.create.CreateSettlementViewModel {
+}
+class com.wf.bm.feature.settlements.create.CreateSettlementState {
+}
+class com.wf.bm.feature.settlements.create.CreateSettlementActions {
+}
+class com.wf.bm.navigation.graphs.SettlementsGraph {
+}
+
+
+androidx.activity.ComponentActivity <|-- com.wf.bm.MainActivity
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.ui.TopLevelDestination +.. com.wf.bm.ui.TopLevelDestination$null
+com.wf.bm.core.data.repository.UserRepository <|.. com.wf.bm.core.data.repository.BackendUserRepository
+com.wf.bm.core.data.util.AuthenticationManager <|.. com.wf.bm.core.data.util.AuthenticationManagerImpl
+com.wf.bm.core.data.util.UiEvent +.. com.wf.bm.core.data.util.UiEvent$Success
+com.wf.bm.core.data.util.UiEvent <|-- com.wf.bm.core.data.util.UiEvent$Success
+com.wf.bm.core.data.util.UiEvent +.. com.wf.bm.core.data.util.UiEvent$Error
+com.wf.bm.core.data.util.UiEvent <|-- com.wf.bm.core.data.util.UiEvent$Error
+com.wf.bm.core.data.util.UiEvent +.. com.wf.bm.core.data.util.UiEvent$Loading
+com.wf.bm.core.data.util.UiEvent <|-- com.wf.bm.core.data.util.UiEvent$Loading
+com.wf.bm.core.data.repository.SettingsRepository <|.. com.wf.bm.core.data.repository.SettingsRepositoryImpl
+com.wf.bm.core.model.RepetitionPeriods +.. com.wf.bm.core.model.RepetitionPeriods$Companion
+androidx.navigation.NavType <|-- com.wf.bm.core.utils.CustomNavType
+com.wf.bm.core.data.repository.GoalsRepository <|.. com.wf.bm.core.data.repository.GoalsRepositoryImpl
+com.wf.bm.core.data.repository.SettlementsRepository <|.. com.wf.bm.core.data.repository.SettlementsRepositoryImpl
+com.wf.bm.core.data.repository.WalletRepository <|.. com.wf.bm.core.data.repository.WalletRepositoryImpl
+com.wf.bm.core.model.Currency +.. com.wf.bm.core.model.Currency$Companion
+androidx.lifecycle.ViewModel <|-- com.wf.bm.feature.settlements.details.SettlementDetailsViewModel
+com.wf.bm.core.data.repository.TransactionsRepository <|.. com.wf.bm.core.data.repository.TransactionsRepositoryImpl
+android.app.Application <|-- com.wf.bm.BmApplication
+androidx.lifecycle.ViewModel <|-- com.wf.bm.feature.settlements.main.filter.FilterDialogViewModel
+android.os.Parcelable <|.. com.wf.bm.core.model.Goal
+android.os.Parcelable <|.. com.wf.bm.core.model.Category
+com.wf.bm.core.data.repository.UserRepository <|.. com.wf.bm.core.data.repository.UserRepositoryImpl
+@enduml
