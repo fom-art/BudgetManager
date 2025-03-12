@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.bm.android.feature)
-    alias(libs.plugins.bm.android.library.compose)
+    alias(libs.plugins.build.logic.feature)
+    alias(libs.plugins.build.logic.library.compose)
 }
 
 android {

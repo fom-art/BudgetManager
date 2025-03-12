@@ -1,4 +1,4 @@
-package com.wf.bm.build_logic.convention
+package com.build_logic.convention
 
 import org.gradle.api.Project
 import org.gradle.api.artifacts.Dependency

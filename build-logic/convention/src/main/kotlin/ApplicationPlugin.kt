@@ -1,10 +1,11 @@
 import com.android.build.api.dsl.ApplicationExtension
-import com.wf.bm.build_logic.convention.configureKotlinAndroid
+import com.build_logic.convention.TARGET_SDK
+import com.build_logic.convention.configureKotlinAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
-class AndroidApplicationConventionPlugin: Plugin<Project> {
+class ApplicationPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
@@ -15,7 +16,7 @@ class AndroidApplicationConventionPlugin: Plugin<Project> {
 
             extensions.configure<ApplicationExtension> {
                 configureKotlinAndroid(this)
-                defaultConfig.targetSdk = 34
+                defaultConfig.targetSdk = TARGET_SDK
             }
         }
     }

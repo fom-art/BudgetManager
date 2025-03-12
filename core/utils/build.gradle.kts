@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.bm.android.library)
-    alias(libs.plugins.bm.android.library.compose)
+    alias(libs.plugins.build.logic.library)
+    alias(libs.plugins.build.logic.library.compose)
     alias(libs.plugins.kotlin.serialization)
 }
 

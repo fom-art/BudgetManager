@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.bm.android.library)
+    alias(libs.plugins.build.logic.library)
     alias(libs.plugins.kotlin.serialization)
     id("kotlin-parcelize")
 }

@@ -1,20 +1,19 @@
-import com.android.build.api.dsl.ApplicationExtension
-import com.wf.bm.build_logic.convention.configureAndroidCompose
+import com.android.build.gradle.LibraryExtension
+import com.build_logic.convention.configureAndroidCompose
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType
 
-class AndroidApplicationComposeConventionPlugin : Plugin<Project> {
+class LibraryComposePlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply("com.android.application")
+                apply("com.android.library")
                 apply("org.jetbrains.kotlin.plugin.compose")
             }
 
-            val extension = extensions.getByType<ApplicationExtension>()
+            val extension = extensions.getByType<LibraryExtension>()
             configureAndroidCompose(extension)
         }
     }
-
 }

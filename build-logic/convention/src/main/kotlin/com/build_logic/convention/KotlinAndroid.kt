@@ -1,4 +1,4 @@
-package com.wf.bm.build_logic.convention
+package com.build_logic.convention
 
 import com.android.build.api.dsl.CommonExtension
 import org.gradle.api.JavaVersion
@@ -10,15 +10,15 @@ internal fun Project.configureKotlinAndroid(
     commonExtension: CommonExtension<*, *, *, *, *, *>,
 ) {
     commonExtension.apply {
-        compileSdk = 34
+        compileSdk = COMPILE_SDK
 
         defaultConfig {
-            minSdk = 28
+            minSdk = MIN_SDK
         }
 
         compileOptions {
-            sourceCompatibility = JavaVersion.VERSION_17
-            targetCompatibility = JavaVersion.VERSION_17
+            sourceCompatibility = JAVA_VERSION
+            targetCompatibility = JAVA_VERSION
         }
     }
 
@@ -28,7 +28,7 @@ internal fun Project.configureKotlinAndroid(
 private fun Project.configureKotlin() {
     tasks.withType<KotlinCompile>().configureEach {
         kotlinOptions {
-            jvmTarget = JavaVersion.VERSION_17.toString()
+            jvmTarget = JAVA_VERSION.toString()
         }
     }
 }

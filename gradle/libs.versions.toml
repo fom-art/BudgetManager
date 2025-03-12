@@ -104,8 +104,8 @@ compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "
 
 
 # Plugins defined by this project
-bm-android-application = { id = "bm.android.application", version = "unspecified" }
-bm-android-application-compose = { id = "bm.android.application.compose", version = "unspecified" }
-bm-android-library = { id = "bm.android.library", version = "unspecified" }
-bm-android-library-compose = { id = "bm.android.library.compose", version = "unspecified" }
-bm-android-feature = { id = "bm.android.feature", version = "unspecified" }
+build-logic-application = { id = "build.logic.application", version = "unspecified" }
+build-logic-application-compose = { id = "build.logic.application.compose", version = "unspecified" }
+build-logic-library = { id = "build.logic.library", version = "unspecified" }
+build-logic-library-compose = { id = "build.logic.library.compose", version = "unspecified" }
+build-logic-feature = { id = "build.logic.feature", version = "unspecified" }

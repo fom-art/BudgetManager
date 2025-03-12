@@ -1,15 +1,16 @@
-import com.wf.bm.build_logic.convention.implementation
-import com.wf.bm.build_logic.convention.libs
+import com.build_logic.convention.implementation
+import com.build_logic.convention.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
 
-class AndroidFeatureConventionPlugin : Plugin<Project> {
+class FeaturePlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply("bm.android.library")
+                apply("build.logic.library")
+                apply("build.logic.library.compose")
                 apply("kotlinx-serialization")
             }
 

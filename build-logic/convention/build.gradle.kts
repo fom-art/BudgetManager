@@ -4,7 +4,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.wf.bm.build_logic.convention"
+group = "com.build_logic."
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -34,25 +34,25 @@ tasks {
 
 gradlePlugin {
     plugins {
-        register("androidApplicationCompose") {
-            id = "bm.android.application.compose"
-            implementationClass = "AndroidApplicationComposeConventionPlugin"
+        register("applicationCompose") {
+            id = "build.logic.application.compose"
+            implementationClass = "ApplicationComposePlugin"
         }
-        register("androidApplication") {
-            id = "bm.android.application"
-            implementationClass = "AndroidApplicationConventionPlugin"
+        register("application") {
+            id = "build.logic.application"
+            implementationClass = "ApplicationPlugin"
         }
-        register("androidLibraryCompose") {
-            id = "bm.android.library.compose"
-            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        register("libraryCompose") {
+            id = "build.logic.library.compose"
+            implementationClass = "LibraryComposePlugin"
         }
-        register("androidLibrary") {
-            id = "bm.android.library"
-            implementationClass = "AndroidLibraryConventionPlugin"
+        register("library") {
+            id = "build.logic.library"
+            implementationClass = "LibraryPlugin"
         }
-        register("androidFeature") {
-            id = "bm.android.feature"
-            implementationClass = "AndroidFeatureConventionPlugin"
+        register("feature") {
+            id = "build.logic.feature"
+            implementationClass = "FeaturePlugin"
         }
     }
 }
